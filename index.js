@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const wifi = require('node-wifi');
+const port = 80;
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -11,7 +12,7 @@ app.listen(port, () => {
 })
 
 
-
+/*
 wifi.init({
 	iface: null
 });
@@ -23,3 +24,4 @@ wifi.scan((error, networks) => {
 		console.log(networks);
 	}
 });
+*/
